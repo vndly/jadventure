@@ -35,7 +35,7 @@ Effects
 The user can define different effects:
 
 * For texts:
-	+ Custom font
+	+ Text font
 	+ Text size
 	+ Text color
 	+ Text align
