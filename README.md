@@ -50,3 +50,12 @@ The user can define different effects:
 	+ Blur
 	+ Size
 	+ Delay
+
+Supported Browsers
+------------------
+
+* Google Chrome
+* Mozilla Firefox
+* Opera
+* Safari
+* Internet Explorer
