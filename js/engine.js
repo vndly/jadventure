@@ -69,7 +69,7 @@
 			return false;
 		}
 		
-		sendChoise('');
+		sendChoice('');
 	}
 	
 	function getAudioType()
@@ -92,7 +92,7 @@
 		return type;
 	}
 	
-	function sendChoise(option)
+	function sendChoice(option)
 	{
 		showLoadingMessage();
 		
@@ -173,9 +173,9 @@
 			{
 				processText(element);
 			}
-			else if (element.nodeName == 'choise')
+			else if (element.nodeName == 'choice')
 			{
-				processChoise(element);
+				processChoice(element);
 			}
 			else if (element.nodeName == 'font')
 			{
@@ -379,7 +379,7 @@
 	{
 		var target = getAttribute(node, 'target');
 		
-		sendChoise(target);
+		sendChoice(target);
 	}
 	
 	function processFont(node)
@@ -391,7 +391,7 @@
 		nextScene();
 	}
 	
-	function processChoise(node)
+	function processChoice(node)
 	{
 		textContainer.style.opacity = 0;
 		
@@ -407,15 +407,15 @@
 			processOption(node.childNodes[index], over);
 		}
 		
-		setTimeout(processChoiseStep.bind(0, parseFloat(blur), parseInt(speed)), speed);
+		setTimeout(processChoiceStep.bind(0, parseFloat(blur), parseInt(speed)), speed);
 	}
 	
-	function processChoiseStep(alpha, blur, speed)
+	function processChoiceStep(alpha, blur, speed)
 	{
 		if (alpha <= 1)
 		{
 			textContainer.style.opacity = alpha;
-			setTimeout(processChoiseStep.bind((alpha + blur), blur, speed), speed);
+			setTimeout(processChoiceStep.bind((alpha + blur), blur, speed), speed);
 		}
 	}
 	
@@ -517,7 +517,7 @@
 			if (!loadingScene)
 			{
 				loadingScene = true;
-				sendChoise(target);
+				sendChoice(target);
 			}
 		}
 		

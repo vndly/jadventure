@@ -189,7 +189,7 @@
 	{
 		$result = '';
 		
-		if (($type == 'text') || ($type == 'choise') || ($type == 'option'))
+		if (($type == 'text') || ($type == 'choice') || ($type == 'option'))
 		{
 			$result = '.txt';
 		}
@@ -213,7 +213,7 @@
 	{
 		$result = '';
 		
-		if (($type == 'text') || ($type == 'choise') || ($type == 'option'))
+		if (($type == 'text') || ($type == 'choice') || ($type == 'option'))
 		{
 			$result = '../bin/' . $adventure . '/txt/';
 		}
@@ -264,7 +264,7 @@
 			$result = file_get_contents($path_default);
 		}
 		
-		if (($type == 'text') || ($type == 'choise') || ($type == 'option'))
+		if (($type == 'text') || ($type == 'choice') || ($type == 'option'))
 		{
 			$result = rawurlencode($result);
 		}

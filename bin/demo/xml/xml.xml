@@ -14,10 +14,10 @@
 			<text  data='text_3'  wait='1000' clear='true' />
 			<sound data='sound_1' wait='500' />
 			<text  data='text_4'  wait='1500' clear='true' />
-			<choise data='option_0' over='C8C800' blur='0.02' speed='20'>
+			<choice data='option_0' over='C8C800' blur='0.02' speed='20'>
 				<option data='option_1' target='A' />
 				<option data='option_2' target='B' />
-			</choise>
+			</choice>
 		</scene>
 		<scene id='1' font='font1' size='20' color='#DDDDDD' align='left' speed='20' blur='0.02' ratio='0.8'>
 			<image data='image_3' />
