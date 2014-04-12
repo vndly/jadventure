@@ -1,7 +1,7 @@
 JAdventure
 ==========
 
-JAdventure is a JavaScript/PHP adventure game engine. The user just needs to create an XML file that defines the story flow and place all the media files (texts, images, sounds, music and fonts) in a specific folder. The engine will show the texts, images and audio defined in the story and the user will make different decisions that will take him through different stories.
+JAdventure is a JavaScript/PHP adventure video game framework. The user just needs to create an XML file that defines the story flow and place all the media files (texts, images, sounds, music and fonts) into the specific folder. The engine will display the texts, images and audio defined in the story and the user will take different decisions that will take him through different stories.
 
 Demo
 ----
@@ -17,7 +17,7 @@ Folder structure
 	+ msc (music)
 	+ snd (sounds)
 	+ txt (texts)
-	+ xml (story flow)
+	+ xml (story script)
 
 Languages
 ---------
